@@ -16,3 +16,4 @@ func main() {
 	Array = append(Array, username, email)
 	fmt.Println(Array)
 }
+# go
