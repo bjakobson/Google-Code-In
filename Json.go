@@ -29,7 +29,6 @@ func main() {
 			Model:      Model,
 			productID:  mNumber,
 		}
-		//fmt.Println(CameraClass(CameraInfo))
 		fmt.Println(CameraClass(CameraInfo))
 
 	}
@@ -62,4 +61,3 @@ func main() {
 //productID:  mNumber,
 //}
 //fmt.Println(CameraClass(CameraInfo))
-# go
