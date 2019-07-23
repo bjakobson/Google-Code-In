@@ -8,12 +8,9 @@ import (
 func main() {
 	c := make(chan string)
 	go count("Sheep", c)
+	go count("deer", c)
 
-	for {
-		msg, open := <-c
-		if !open {
-			break
-		}
+	for msg := range c {
 		fmt.Println(msg)
 	}
 
@@ -26,4 +23,3 @@ func count(thing string, c chan string) {
 	}
 	close(c)
 }
-# Go
