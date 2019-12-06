@@ -7,12 +7,12 @@ import (
 
 func redirect(w http.ResponseWriter, r *http.Request) {
 
-	http.Redirect(w, r, "http://www.golang.org", 301) //link and web type.
+	http.Redirect(w, r, "http://www.golang.org", 301)
 }
 
 func main() {
-	http.HandleFunc("/", redirect)           // calling the redirect function
-	err := http.ListenAndServe(":1104", nil) //localhost server. ex: localhost:1104
+	http.HandleFunc("/", redirect)
+	err := http.ListenAndServe(":9191", nil)
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
 	}
