@@ -45,7 +45,7 @@ func message(w http.ResponseWriter, r *http.Request) {
 }
 
 func Execute() {
-	// execute books checked out
+	// execute 
 	booksout := mux.NewRouter().StrictSlash(true)
 	booksout.HandleFunc("/out", booksCheckedOut)
 	booksout.HandleFunc("/in", booksCheckedIn)
