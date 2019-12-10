@@ -14,3 +14,5 @@ How to use library.go:
     
     
     -If you want to see availiable books: localhost:8080/av
+    
+    -If you want to see popular books: localhost:8080/pop
